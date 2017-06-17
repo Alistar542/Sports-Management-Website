@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background-position: top;
+    background-image:url('images/new1.jpg');
+    
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+table{ 
+    height:100%;
+    width:100%;
+    
+}
+
+.div1 {
+
+    margin-bottom:5px;
+    margin-top:5px;
+    margin-left:0px;
+    margin-right:0px;
+    padding-bottom:5px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:5px;
+    width:100%;
+
+}
+
+.div2 {
+    
+
+    width:400px;
+    height:300px;
+    
+    
+    
+}
+
+.div3 {
+    width:50px;
+    height:auto;
+}
+
+.div4 {
+    width:50px;
+    height:auto;
+}
+
+.div5 {
+    width:250px;
+    height:auto;
+}
+
+.div6 {
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    height:100px;
+    width:100%;
+    background-image:url('images/back2.jpg');
+}
+
+.div7 {
+    width:300px;
+}
+
+.div8 {
+    width:300px;
+    text-align: left;
+}
+
+.div9 {
+    text-decoration-color:white;
+    text-emphasis-color:white;
+    color:white;
+    font:bold 50px arial,verdana;
+}
+
+.div10 {
+    color:white;
+    font:300 15px arial,verdana;
+}
+
+.div11 {
+    background-color:blue;
+    text-align:center;
+    font:bold 12px arial,verdana;
+    color:white;
+    height:30px;
+    width:100px;
+   border-bottom-color:black;
+   border-left-color:black;
+   border-right-color:black;
+   border-top-color:black;
+   border-color:aqua
+}
+
+.div12 {
+    height:22px;
+    width:140px;
+}
+
+.signinlbl {
+    font:300 20px arial,verdana;
+    color:white;
+}
