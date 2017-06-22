@@ -1,0 +1,51 @@
+﻿body {
+    padding:0px;
+    margin:0px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 50px;
+    width: 100%;
+}
+
+li {
+    float: left;
+    width: 793px;
+    height: 50px;
+    margin-left: 3px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 40px;
+    width: 131px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.textf {
+    border: 2px solid red;
+    height:35px;
+    width:100px;
+    border-radius: 5px;
+    float:right;
+}
+
+.tabtop {
+    float:right;
+}
+
+table {
+    height:auto;
+    width:200px;
+}

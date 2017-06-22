@@ -137,7 +137,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>1pm to 2pm</td>
+                        <td class="auto-style2">1pm to 2pm</td>
                     </tr>
                     <tr>
                         <td>

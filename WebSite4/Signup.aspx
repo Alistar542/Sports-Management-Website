@@ -24,23 +24,11 @@
     <div>
     
         <table class="div6">
+            
             <tr>
-                <td style="text-align: center">
+                <td style="text-align: left">
                     <asp:Label  class="div9" ID="lbl_sports" runat="server" Text="Sports Management" ></asp:Label>
                 </td>
-            </tr>
-        </table>
-    
-        <table class="div1">
-            <tr>
-                <td></td>
-                <td  class="div8" colspan="5">
-                    <asp:Label class="signinlbl" ID="lbl_signinhere" runat="server" Text="Sign In Here!"></asp:Label>
-                    <br />
-                </td>
-            </tr>
-            <tr>
-                <td class="div2" rowspan="12"></td>
                 <td class="div4">
                     <asp:Label class="div10" ID="lbl_srno" runat="server" Text="SR No."></asp:Label>
                 </td>
@@ -56,6 +44,29 @@
                 <td class="div4">
                     <asp:Button ID="btn_in" runat="server" Text="Sign-In" OnClick="btn_in_Click" />
                 </td>
+                <td></td>
+            </tr>
+        </table>
+    
+        <table class="div1">
+            <tr>
+                <td></td>
+                <td  class="div8" colspan="5">
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="div2" rowspan="12"></td>
+                <td class="div4">
+                    &nbsp;</td>
+                <td class="div3">
+                    &nbsp;</td>
+                <td class="div4">
+                    &nbsp;</td>
+                <td class="div3">
+                    &nbsp;</td>
+                <td class="div4">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="div5" colspan="5">

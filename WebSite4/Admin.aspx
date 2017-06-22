@@ -21,6 +21,7 @@
         }
         .auto-style6 {
             text-align: center;
+            height: 29px;
         }
         .auto-style7 {
             width: 100%;
@@ -95,6 +96,18 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
+                <td>
+                    &nbsp;&nbsp;
+                    <asp:Label class="prolbl" ID="Label4" runat="server" Text="Enter The number of slots"></asp:Label>
+                </td>
+                <td colspan="2">
+                    <asp:TextBox ID="txt_slots" runat="server" OnTextChanged="txt_slots_TextChanged"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:Button ID="btn_sub" runat="server" OnClick="btn_sub_Click" Text="Submit" />
+                </td>
+            </tr>
+            <tr>
                 <td>&nbsp;</td>
                 <td colspan="2">&nbsp;</td>
                 <td>&nbsp;</td>
@@ -102,13 +115,17 @@
             <tr>
                 <td class="auto-style6" colspan="4">
                     <asp:Button ID="btn_list" runat="server" OnClick="btn_list_Click" Text="Participant List" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btn_pr" runat="server" OnClick="btn_pr_Click" Text="Prize List" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btn_out" runat="server" OnClick="btn_out_Click" Text="Time Out" />
                 </td>
             </tr>
         </table>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:MultiView ID="MultiView1" runat="server">
             <asp:View ID="View1" runat="server">
-                <asp:GridView ID="GridView1" runat="server">
+                <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 </asp:GridView>
             </asp:View>
             &nbsp;
@@ -149,6 +166,21 @@
                 <br />
                 <br />
                 <br />
+            </asp:View>
+            <asp:View ID="View3" runat="server">
+                <asp:GridView ID="GridView2" runat="server" DataKeyNames="srno" AutoGenerateColumns="False" OnRowCommand="GridView2_RowCommand">
+                    <Columns>
+                        <asp:BoundField DataField="name" HeaderText="Name" />
+                        <asp:ButtonField ButtonType="Button" Text="First" CommandName="First" />
+                        <asp:ButtonField ButtonType="Button" Text="Second" CommandName="Second" />
+                        <asp:ButtonField ButtonType="Button" Text="Third" CommandName="Third" />
+                    </Columns>
+                </asp:GridView>
+                <asp:GridView ID="GridView3" runat="server">
+                </asp:GridView>
+                <asp:Button ID="btn_undo" runat="server" Text="Undo" OnClick="btn_undo_Click" />
+                <br />
+                <asp:Button ID="btn_subprize" runat="server" Text="Submit" OnClick="btn_subprize_Click" />
             </asp:View>
             <br />
         </asp:MultiView>

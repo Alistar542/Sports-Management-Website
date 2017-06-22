@@ -32,12 +32,20 @@ public class Connection
 
     public static string scalar(string str) 
     {
-        SqlCommand cmd = new SqlCommand();
-        cmd = Connection.con.CreateCommand();
-        cmd.CommandType = CommandType.Text;
-        cmd.CommandText = str;
-        string s = cmd.ExecuteScalar().ToString();
-        return s;
+        string s;
+        try
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd = Connection.con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = str;
+            s = cmd.ExecuteScalar().ToString();
+            return s;
+        }
+        catch(Exception e)
+        {
+           return "0";
+        }
 
     }
 

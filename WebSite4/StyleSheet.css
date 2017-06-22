@@ -65,6 +65,8 @@ table{
     height:100px;
     width:100%;
     background-image:url('images/back2.jpg');
+    
+    
 }
 
 .div7 {
@@ -80,7 +82,7 @@ table{
     text-decoration-color:white;
     text-emphasis-color:white;
     color:white;
-    font:bold 50px arial,verdana;
+    font:bold 30px arial,verdana;
 }
 
 .div10 {
@@ -110,4 +112,8 @@ table{
 .signinlbl {
     font:300 20px arial,verdana;
     color:white;
+}
+
+img {
+    opacity:0.5;
 }

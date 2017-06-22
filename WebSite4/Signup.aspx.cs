@@ -19,6 +19,30 @@ public partial class Signup : System.Web.UI.Page
         {
             rbl_cat.SelectedIndex = 1;
         }
+        string ty = "select type from table_SignIn";
+        DataTable dr;
+        dr = Connection.dt(ty);
+        
+            int n = dr.Rows.Count;
+            for (int i = 0; i < n; i++) 
+            {
+                for (int j = 1; j <= 11; j++)
+                {
+
+                    if (ddl_event.Items[j].Text == dr.Rows[i][0].ToString())
+                    {
+
+                        ddl_event.Items[j].Enabled = false;
+                    }
+                    //else
+                    //{
+                    //    ddl_event.Items[j].Enabled = true;
+                    //}
+                }
+            
+            
+        }
+        
 
     }
     protected void rbl_gen_SelectedIndexChanged(object sender, EventArgs e)
@@ -40,7 +64,7 @@ public partial class Signup : System.Web.UI.Page
             if (sdr.Read()==true)
             {
                  
-                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('SrNo Alraedy Registered');", true);
+                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('SrNo Already Registered');", true);
 
                  sdr.Close();
 
@@ -182,6 +206,7 @@ public partial class Signup : System.Web.UI.Page
     }
     protected void btn_adup_Click(object sender, EventArgs e)
     {
+        string ty = "select type from table_SignIn where";
 
         if ((ddl_event.Text == "Select any event" && ddl_event.Visible == true) || (txt_key.Text == "" && txt_key.Visible == true))
         {
